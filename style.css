@@ -1,0 +1,61 @@
+body {
+    background-color: #222222;
+    color: rgb(153, 153, 235);
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+#new {
+    background-color: rgb(9, 9, 18);
+    border: 2px solid #421e6d;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#availability {
+    background-color: rgb(9, 9, 18);
+    border: 2px solid #421e6d;
+    margin-bottom: 2%;
+
+}
+
+#result {
+    background-color: rgb(9, 9, 18);
+    border: 2px solid #421e6d;
+    margin-bottom: 2%;
+
+}
+
+#signUp {
+    background-color: rgb(9, 9, 18);
+    border: 2px solid #421e6d;
+    margin-bottom: 2%;
+}
+
+nav ul {
+    background-color: rgb(9, 9, 18);
+    border: 2px solid;
+    border-color: #421e6d;
+    height: 35px;
+    padding: 7px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 10%;
+    float: left;
+}
+
+nav ul li:last-child {
+    margin-right: 40px;
+    float: right;
+}
+nav ul li a{padding: 5px;
+    
+}
+nav ul li a:hover{
+background-color: rgb(42, 15, 86);
+}

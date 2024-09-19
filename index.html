@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When2Meet</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>
+        When2Meet
+    </h1>
+    <nav>
+        <ul>
+            <li> <a href="#new">⚡ Create Event</a></li>
+            <li> <a href="#availability">⚡ Select Availability</a></li>
+            <li> <a href="#result">⚡ View Result</a></li>
+            <li> <a href="#signUp">✍ Sign up</a></li>
+
+        </ul>
+    </nav>
+    <section id="new">
+
+        <h2>
+            Create Event
+        </h2>
+        <form action="" method="post">
+            <label for="Event">Event name</label>
+            <input type="text" name="EventName" id="Event" max="19" maxlength="17" placeholder="Enter the event name"
+                required>
+            <br>
+            <br>
+            <label for="EventDesID">Event Description: </label>
+            <textarea name="EventDes" id="EventDesID" placeholder="Enter the event Description" required></textarea>
+            <br>
+            <br>
+            <label for="startDateID">Start date: </label>
+            <input type="date" name="startDate" id="startDateID" required>
+            <label for="endDateID">end date:</label>
+            <input type="date" name="endDate" id="endDateID" required>
+            <label for="timeID">Time increment</label>
+            <select name="time" id="timeID">
+                <option value="15">15 min</option>
+                <option value="30">30 min</option>
+                <option value="45">45 min</option>
+                <option value="60">1 hour</option>
+            </select>
+            <input type="submit" value="Create a new event">
+        </form>
+    </section>
+
+    <section id="availability">
+
+        <h2>
+            Input Availability
+        </h2>
+        <form action="" method="post">
+            <table>
+                <table border="1">
+                    <thead>
+                        <th>Time</th>
+                        <th>sunday</th>
+                        <th>monday</th>
+                        <th>tuesday</th>
+                        <th>wednesday</th>
+                        <th>thursday</th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <input type="time" name="time" id="time" required>
+                        </td>
+                        <td><input type="checkbox" name="freeTime" value="sunday"></td>
+                        <td> <input type="checkbox" name="freeTime" value="monday"> </td>
+                        <td> <input type="checkbox" name="freeTime" value="tuesday"> </td>
+                        <td> <input type="checkbox" name="freeTime" value="wednesday"> </td>
+                        <td> <input type="checkbox" name="freeTime" value="thursday"> </td>
+                    </tbody>
+                </table>
+                <br>
+                <input type="submit" value="submit availability">
+        </form>
+    </section>
+    <section id="result">
+        <h2>View Result</h2>
+        <table>
+            <table border="1">
+                <thead>
+                    <th>Time</th>
+                    <th>sunday</th>
+                    <th>monday</th>
+                    <th>tuesday</th>
+                    <th>wednesday</th>
+                    <th>thursday</th>
+                </thead>
+                <tbody>
+                    <!--Note this is just for testing maybe in the futher labs we will be able to make interactive website. but as for now we don't need to handle the post requests !-->
+                    <td>
+                        <p> 10:00 am</p>
+                    </td>
+                    <td>
+                        <p>busy</p>
+                    </td>
+                    <td>
+                        <p>free</p>
+                    </td>
+                    <td>
+                        <p>free</p>
+                    </td>
+                    <td>
+                        <p>busy</p>
+                    </td>
+                    <td>
+                        <p>free</p>
+                    </td>
+                </tbody>
+            </table>
+            <br>
+
+            <p> youtube link <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+                    target="_blank">https://www.youtube.com/watch?v=xvFZjo5PgG0</a> </p>
+
+            <br>
+    </section>
+
+    <section id="signUp">
+
+        <h2>Sign Up</h2>
+        <form action="" method="post">
+            <label for="emailID">email:</label>
+            <input type="email" name="email" id="emailID" required>
+            <label for="usernameID">username: </label>
+            <input type="text" name="username" id="usernameID" required>
+            <label for="passwordID">password: </label>
+            <input type="password" name="password" id="passwordID">
+            <br>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 When2Meet</p>
+    </footer>
+</body>
+
+
+</html>
